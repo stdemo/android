@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="priority">
+        <item>Important-Urgent</item>
+        <item>NonImportant-Urgent</item>
+        <item>Important-Normal</item>
+        <item>NonImportant-Normal</item>
+    </string-array>
+</resources>

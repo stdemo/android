@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llTitle"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp">
+
+        <CheckBox
+            android:id="@+id/cbDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:text="DUMMY_TEST_STRING"/>
+
+        <ImageView
+            android:id="@+id/ivIndReminder"
+            android:visibility="visible"
+            android:src="@drawable/ic_ind_reminder"
+            android:layout_margin="4dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDetails"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etDetail"
+            android:lines="10"
+            android:scrollbars="vertical"
+            android:text="Test Words"
+            android:textSize="12sp"
+            android:gravity="top|left"
+            android:textAlignment="gravity"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            android:dividerPadding="3dp"
+            android:divider="?android:dividerVertical"
+            android:background="?android:selectableItemBackgroundBorderless">
+
+            <ImageButton
+                style="?android:borderlessButtonStyle"
+                android:id="@+id/ibReminder"
+                android:src="@drawable/ic_ind_reminder"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                style="?android:borderlessButtonStyle"
+                android:id="@+id/ibReact"
+                android:src="@drawable/ic_react"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"/>
+
+            <ImageButton
+                style="?android:borderlessButtonStyle"
+                android:id="@+id/ibDelete"
+                android:src="@drawable/ic_del"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"/>
+
+
+            <Spinner
+                android:id="@+id/spPriority"
+                android:spinnerMode="dialog"
+                android:prompt="@string/sp_priority"
+                android:layout_width="0dp"
+                android:layout_weight="1.8"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textAlignment="gravity"
+                android:entries="@array/priority"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/steve/stdemo/iToDo/app/src/main/res/layout/todo_child_item.xml -->

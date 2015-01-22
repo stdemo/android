@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/steve/stdemo/iToDo/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="priority">
+        <item>Important-Urgent</item>
+        <item>NonImportant-Urgent</item>
+        <item>Important-Normal</item>
+        <item>NonImportant-Normal</item>
+    </string-array>
+    <!-- From: file:/home/steve/stdemo/iToDo/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="act_search">Search ToDo List</string>
+    <string name="act_settings">Settings</string>
+    <string name="app_name">iToDo</string>
+    <string name="sp_priority">Priority</string>
+</resources>

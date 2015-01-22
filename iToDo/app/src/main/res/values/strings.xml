@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iToDo</string>
+    <string name="act_search">Search ToDo List</string>
+    <string name="act_settings">Settings</string>
+    <string name="sp_priority">Priority</string>
+</resources>

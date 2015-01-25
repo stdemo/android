@@ -61,8 +61,7 @@
             android:orientation="horizontal"
             android:showDividers="middle"
             android:dividerPadding="3dp"
-            android:divider="?android:dividerVertical"
-            android:background="?android:selectableItemBackgroundBorderless">
+            android:divider="?android:dividerVertical">
 
             <ImageButton
                 style="?android:borderlessButtonStyle"

@@ -5,14 +5,24 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
+import com.stexample.demo.itodo.datacenter.ToDoData;
+import com.stexample.demo.itodo.datacenter.ToDoElement;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by steve on 1/21/15.
  */
-public class DetailedView {
+public class ViewCollection {
 
     private Activity mActivity;
+    List<String> groupArray = ToDoData.groupArray;
+    ArrayList<List<ToDoElement>> childArray = ToDoData.childArray;
 
-    public DetailedView(Activity activity) {
+    public ViewCollection(Activity activity) {
+        ToDoData.initToDoData();
+
         mActivity = activity;
 
         //ReminderHandling();
